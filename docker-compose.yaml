@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres:17.4-alpine
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: ordersDb
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres:/var/lib/postgresql/data/
+    networks:
+      - postgres_network
+
+networks:
+  postgres_network:
+    driver: bridge
