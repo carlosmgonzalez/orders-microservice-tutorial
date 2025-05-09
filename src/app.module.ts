@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { OrdersModule } from './orders/orders.module';
-import { ConfigModule } from '@nestjs/config';
+import { NastModule } from './transports/nast.module';
 
 @Module({
-  imports: [OrdersModule, ConfigModule.forRoot()],
+  imports: [OrdersModule, NastModule],
   controllers: [],
   providers: [],
 })
