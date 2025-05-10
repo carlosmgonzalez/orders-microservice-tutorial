@@ -1,0 +1,25 @@
+# Archivos de construcción y dependencias:
+node_modules/
+dist/
+build/
+
+# Archivos de desarrollo y configuración
+.git/
+.gitignore
+.editorconfig
+.prettierrc
+.eslintrc
+tsconfig.json
+
+# Archivos de pruebas y documentación:
+test/
+tests/
+*.md
+.vscode/
+
+#Archivos de entorno y configuración local:
+.env
+
+# Archivos de docker:
+dockerfile
+docker-compose*.yaml
